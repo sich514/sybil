@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Background Image with Buy Now Button</title>
+    <title>SYBIL Background with Buy Now Button</title>
     <style>
         * {
             margin: 0;
@@ -17,19 +17,26 @@
             font-family: Arial, sans-serif;
         }
 
-        /* Background styling */
+        /* General background styling */
         .background {
             background: url('images/sybil.png') no-repeat center center fixed;
             background-size: cover;
             height: 100vh;
             display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
+            justify-content: center;
             align-items: center;
-            padding-bottom: 20px;
+            flex-direction: column;
         }
 
-        /* Button styling */
+        /* Mobile-specific background */
+        @media (max-width: 768px) {
+            .background {
+                background: url('images/sybilmobile.png') no-repeat center center fixed;
+                background-size: cover;
+            }
+        }
+
+        /* Centering the button */
         .buy-now-btn {
             background-color: #0087b9;
             color: #ffffff;
@@ -38,6 +45,7 @@
             text-transform: uppercase;
             text-decoration: none;
             border-radius: 5px;
+            margin-bottom: 20px;
             transition: background-color 0.3s;
         }
 
@@ -45,32 +53,33 @@
             background-color: #006f92;
         }
 
-        /* Social icons */
+        /* Social icons styling */
         .social-icons {
-            margin-top: 15px;
             display: flex;
+            justify-content: center;
             gap: 20px;
         }
 
         .social-icons a {
             text-decoration: none;
-            color: #ffffff;
-            font-size: 24px;
         }
 
-        .social-icons a:hover {
-            opacity: 0.7;
+        .social-icons img {
+            filter: invert(100%);
+            width: 40px;
+            height: 40px;
         }
 
-        /* Mobile responsive */
+        /* Adjustments for mobile */
         @media (max-width: 768px) {
             .buy-now-btn {
                 font-size: 16px;
                 padding: 12px 24px;
             }
 
-            .social-icons a {
-                font-size: 20px;
+            .social-icons img {
+                width: 32px;
+                height: 32px;
             }
         }
     </style>
@@ -81,10 +90,10 @@
 
         <div class="social-icons">
             <a href="https://twitter.com" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter" width="40">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter">
             </a>
             <a href="https://telegram.org" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" width="40">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
             </a>
         </div>
     </div>
