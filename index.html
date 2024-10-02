@@ -1,101 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SYBIL.SUI.WE FUCK EVERY PROJECT</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body, html {
-            height: 100%;
-            font-family: Arial, sans-serif;
-        }
-
-        /* General background styling */
-        .background {
-            background: url('images/sybil.png') no-repeat center center fixed;
-            background-size: cover;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        /* Mobile-specific background */
-        @media (max-width: 768px) {
-            .background {
-                background: url('images/sybilmobile.png') no-repeat center center fixed;
-                background-size: cover;
-            }
-        }
-
-        /* Centering the button */
-        .buy-now-btn {
-            background-color: #0087b9;
-            color: #ffffff;
-            padding: 15px 30px;
-            font-size: 20px;
-            text-transform: uppercase;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            transition: background-color 0.3s;
-        }
-
-        .buy-now-btn:hover {
-            background-color: #006f92;
-        }
-
-        /* Social icons styling */
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .social-icons a {
-            text-decoration: none;
-        }
-
-        /* SVG icons already in white */
-        .social-icons img {
-            width: 40px;
-            height: 40px;
-        }
-
-        /* Adjustments for mobile */
-        @media (max-width: 768px) {
-            .buy-now-btn {
-                font-size: 16px;
-                padding: 12px 24px;
-            }
-
-            .social-icons img {
-                width: 32px;
-                height: 32px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SYBIL</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url('images/sybil.png');
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+    }
+    .container {
+      text-align: center;
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    .btn {
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #0087b9;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #005f87;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .social-icons img {
+      width: 50px;
+      height: 50px;
+      margin: 0 15px;
+      cursor: pointer;
+    }
+    /* Mobile specific styles */
+    @media (max-width: 768px) {
+      body {
+        background-image: url('images/sybilmobile.png');
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="background">
-        <a href="https://pump.fun" class="buy-now-btn">Buy Now</a>
 
-        <div class="social-icons">
-            <a href="https://twitter.com" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter">
-            </a>
-            <a href="https://telegram.org" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
-            </a>
-        </div>
+  <div class="container">
+    <h1>SYBIL</h1>
+    <div class="buttons">
+      <a href="https://pump.fun" class="btn">BUY NOW</a>
     </div>
+    <div class="social-icons">
+      <a href="https://twitter.com" target="_blank">
+        <img src="images/xlogo.png" alt="Twitter">
+      </a>
+      <a href="https://telegram.org" target="_blank">
+        <img src="images/tglogo.png" alt="Telegram">
+      </a>
+    </div>
+  </div>
+
 </body>
 </html>
