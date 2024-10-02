@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Background Image with Buy Now Button</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Background styling */
+        .background {
+            background: url('/mnt/data/sybil.png') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+
+        /* Button styling */
+        .buy-now-btn {
+            background-color: #0087b9;
+            color: #ffffff;
+            padding: 15px 30px;
+            font-size: 20px;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buy-now-btn:hover {
+            background-color: #006f92;
+        }
+
+        /* Social icons */
+        .social-icons {
+            margin-top: 15px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 24px;
+        }
+
+        .social-icons a:hover {
+            opacity: 0.7;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .buy-now-btn {
+                font-size: 16px;
+                padding: 12px 24px;
+            }
+
+            .social-icons a {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <a href="https://pump.fun" class="buy-now-btn">Buy Now</a>
+
+        <div class="social-icons">
+            <a href="https://twitter.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter" width="40">
+            </a>
+            <a href="https://telegram.org" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" width="40">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
